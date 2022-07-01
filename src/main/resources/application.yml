@@ -1,0 +1,17 @@
+server:
+  port: 9003     
+spring:
+  application:
+    name: CONFIF-SERVER
+  cloud :
+    config : 
+      server : 
+        git : 
+          uri : https://github.com/sachinudhaya25/config-server-Ekart
+          clone-on-start : true
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+ 
+  
